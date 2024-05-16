@@ -6,7 +6,8 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 In the project directory, you can run:
 
-### `npm start`
+`npm start`
+
 # Todo List Application
 
 ## Description
@@ -27,31 +28,25 @@ To get started with the Todo List application, follow these steps:
 
 ### Clone the repository
 
-bash
-Copy code
-git clone https://github.com/yourusername/todo-list-app.git
-cd todo-list-app
+`git clone https://github.com/yourusername/todo-list-app.git
+cd todo-list-app`
 
 ### Install dependencies
 
 Use npm to install all the necessary dependencies:
 
-bash
-Copy code
-npm install
+`npm install`
 Running the Application
 After installing the dependencies, you can run the application locally with the following command:
 
-bash
-Copy code
-npm run start
+`npm start`
 This will start the development server, and you can view the application by navigating to http://localhost:3000 in your web browser.
 
-## Project Structure
+
+### Project Structure
 The project structure is organized as follows:
 
-plaintext
-Copy code
+```
 .
 ├── public
 │   ├── index.html
@@ -69,10 +64,11 @@ Copy code
 │   └── ...
 ├── package.json
 └── README.md
+```
 
-public/: Contains the HTML template and static assets.
-src/: Contains the React components, custom hooks, and application logic.
-components/: Contains the individual React components.
-hooks/: Contains custom hooks for managing application state.
-App.tsx: The root component that renders the entire application.
-index.tsx: The entry point of the application.
+- `public/`: Contains the HTML template and static assets.
+- `src/`: Contains the React components, custom hooks, and application logic.
+- `components/`: Contains the individual React components.
+- `hooks/`: Contains custom hooks for managing application state.
+- `App.tsx`: The root component that renders the entire application.
+- `index.tsx`: The entry point of the application.

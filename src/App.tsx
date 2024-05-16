@@ -1,25 +1,25 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { Container, Typography } from '@mui/material';
+import { useTodos } from './hooks/useTodos';
+import { TodoList, AddOrEditTodo } from './components';
 
 function App() {
+  const { todos, addTodo, deleteTodo, updateTodo, toggleComplete } = useTodos();
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Container sx={{display: 'flex', flexDirection: 'column', justifyContent: 'center'}}>
+      <Typography variant="h3" gutterBottom textAlign='center'>
+        Todo List
+      </Typography>
+      <AddOrEditTodo 
+        addTodo={addTodo}
+      />
+      <TodoList 
+        todos={todos} 
+        deleteTodo={deleteTodo} 
+        updateTodo={updateTodo} 
+        toggleComplete={toggleComplete} 
+      />
+    </Container>
   );
 }
 
